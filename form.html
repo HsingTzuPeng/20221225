@@ -7,7 +7,9 @@
     <title>HTML Form</title>
 </head>
 <body>
-    <form method="GET" action="">
+    <form method="POST"
+action="https://book.niceinfos.com/frontend/assets/html_contact_form/api.php"></form>
+    <form method="GET" action="https://book.niceinfos.com/frontend/assets/html_contact_form/api.php">
         <div>
             <input type="text" name="account" value="" placeholder="請輸入帳號">
         </div>
@@ -16,6 +18,37 @@
         </div>
         <div>
             <button>發送</button>
+            <input type="number" name="password" placeholder="請輸入密碼">
+        </div>
+        <div>
+            <button>發送</button>
+            <input type="number" name="auth" placeholder="請輸入驗證數字">
+        </div>
+        <div>
+            <input type="tel" name="phone" placeholder="請輸入電話">
+        </div>
+        <div>
+            <input type="color" name="color" placeholder="請輸入顏色">
+        </div>
+        <div>
+            <input type="date" name="date" placeholder="請輸入日期">
+        </div>
+        <div>
+            <input type="time" name="time" placeholder="請輸入時間">
+        </div>
+        <div>
+            <select name="county[]" multiple>
+                <option>請選擇縣市</option>
+                <option value="TP">台北</option>
+                <option value="TC">台中</option>
+                <option value="KS">高雄</option>
+                <div>GARBIGE</div>
+            </select>
+        </div>
+        <div>
+            <input type="submit" value="Send">
+            <button type="submit">發送</button>
+            <button type="button">預覽</button>
         </div>
     </form>
 </body>
